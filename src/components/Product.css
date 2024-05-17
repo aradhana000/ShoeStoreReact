@@ -1,0 +1,25 @@
+.Product {
+    border-bottom: 1px solid #dee2e6;
+    padding: 10px 0;
+  }
+  
+  .Product h3 {
+    margin: 0;
+  }
+  
+  .Product p {
+    margin: 5px 0;
+  }
+  
+  .Product button {
+    width: auto;
+    margin: 5px 5px 5px 0;
+    padding: 5px 10px;
+  }
+  
+  .Product button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  

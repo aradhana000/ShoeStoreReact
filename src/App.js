@@ -1,17 +1,30 @@
 import React from 'react';
-import { ProductProvider } from './ProductContext';
-import ProductTable from '../../components/ProductTable';
+import { StoreProvider } from './context/StoreContext';
+import Seller from './components/Seller';
+import Buyer from './components/Buyer';
 import Cart from './components/Cart';
-const App = () => {
+import CartIcon from './components/CartIcon';
+import './App.css';
+
+function App() {
   return (
-    <ProductProvider>
+    <StoreProvider>
       <div className="App">
-        <h1>Shoe Store</h1>
-        <ProductTable />
-        <Cart />
+        <header className="App-header">
+          <h1>Shoe Store</h1>
+          <CartIcon />
+        </header>
+        <main>
+          <Seller />
+          <Buyer />
+          <Cart />
+        </main>
       </div>
-    </ProductProvider>
+    </StoreProvider>
   );
-};
+}
 
 export default App;
+
+
+
